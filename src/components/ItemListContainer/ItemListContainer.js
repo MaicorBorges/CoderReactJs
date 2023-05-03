@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react"
-import { getProducts } from "asynMock"
-import ItemList from "../ItemList./ItemList.js"
+import { useState, useEffect, useParams } from "react"
+import { getProducts } from "../../asyncMock.js"
+import ItemList from "../ItemList/ItemList.js"
 import { getProductById } from "../../asyncMock.js";
 
 const ItemListContainer = ({ gretting }) => {
@@ -9,7 +9,7 @@ const ItemListContainer = ({ gretting }) => {
     const {categoryId} = useParams()
 
 useEffect(()=> {
-    const asyncFunc = categoryId ? getProductByCategory : getProducts
+    const asyncFunc = categoryId ? getProductById : getProducts
     asyncFunc(categoryId)
     .then (response => 
         setProducts(response))
