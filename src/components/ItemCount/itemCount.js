@@ -1,4 +1,4 @@
-import './ItemCount.css'
+//import './ItemCount.css'
 import { useState } from 'react'
 
 const ItemCount = ({stock, initial, onAdd}) => {
@@ -31,3 +31,5 @@ return (
         </div>   
     </div>
 )}
+
+export default ItemCount
