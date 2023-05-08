@@ -1,7 +1,7 @@
 
 import { useContext } from "react"
 import { CartContext } from "../../context/CartContext.js"
-import CartItem from "../CartItem/CartItem.js"
+import CartItem from "../Item/Item.js"
 import { Link } from "react-router-dom"
 
 const Cart = () => {
@@ -24,3 +24,5 @@ const Cart = () => {
         </div>
     )
 }
+
+export default Cart

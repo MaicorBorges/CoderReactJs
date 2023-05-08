@@ -4,7 +4,7 @@ import ItemList from "../ItemList/ItemList.js"
 import { useParams } from "react-router-dom";
 
 import { getDocs, collection, query, where } from 'firebase/firestore'
-import { db } from '../../services/firebase.js'
+import { db } from '../../services/firebase/Firebase.js'
 
 const ItemListContainer = ({ gretting }) => {
     const [products, setProducts] = useState([])
@@ -40,7 +40,8 @@ const ItemListContainer = ({ gretting }) => {
                 <h1>{gretting}</h1>
                 <ItemList products={products} />
             </div>
-        );
-    };
+        )
+    })
+}
 
-    export default ItemListContainer;
+export default ItemListContainer
