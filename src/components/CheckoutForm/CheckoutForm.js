@@ -1,6 +1,7 @@
 
 import { useState } from 'react'
 
+
 const ChechoutForm = ({ onConfirm }) => {
     const [name, setName] = useState('')
     const [phone, setPhone] = useState('')
