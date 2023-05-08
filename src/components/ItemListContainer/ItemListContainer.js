@@ -33,15 +33,15 @@ const ItemListContainer = ({ gretting }) => {
             .finally(() => {
                 setLoading(false)
             })
+    }, [categoryId])
 
 
-        return (
-            <div>
-                <h1>{gretting}</h1>
-                <ItemList products={products} />
-            </div>
-        )
-    })
-}
+    return (
+        <div>
+            <h1>{gretting}</h1>
+            {loading ? <p>Cargando...</p> : <ItemList products={products} />}
+        </div>
+    );
+};
 
 export default ItemListContainer
