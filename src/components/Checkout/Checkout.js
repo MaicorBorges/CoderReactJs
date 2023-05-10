@@ -34,13 +34,13 @@ const Checkout = () => {
             }
 
             console.log(objOrder)
-                const orderRef = collection(db, 'orders')
+            const orderRef = collection(db, 'orders')
 
-                const orderAdded = await addDoc(orderRef, objOrder)
+            const orderAdded = await addDoc(orderRef, objOrder)
 
-                setOrderId(orderAdded.id)
-                clearCart()
-            
+            setOrderId(orderAdded.id)
+            clearCart()
+
 
         } catch (error) {
             console.log(error)
