@@ -29,6 +29,7 @@ const ChechoutForm = ({ onConfirm }) => {
                     />
                 </label>
                 <label className='Label'>
+                    Telefono
                     <input
                         className='Input'
                         type='text'
@@ -37,6 +38,7 @@ const ChechoutForm = ({ onConfirm }) => {
                     />
                 </label>
                 <label className='Label'>
+                    Email
                     <input
                         className='Input'
                         type='text'
