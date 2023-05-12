@@ -7,7 +7,7 @@ const NavBar = () => {
     return (
         <nav className="NavBar">
             <Link to="/" >
-                <h3> Ecommerce</h3>
+                <h3> Productos Ceramista Micaela Perera</h3>
             </Link>
             <div className="Categories">
                 <NavLink to="/category/Taller" className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Talleres</NavLink>
