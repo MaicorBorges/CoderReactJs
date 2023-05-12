@@ -24,7 +24,7 @@ return (
             <button className='Button' onClick={increment}>+</button>
         </div>
         <div>
-        <button className='Button' onClick={() => onAdd(quantity)} disabled={!stock}> 
+        <button className='Button bg-sky-200 hover:text-sky-700 p-4 rounded-full text-2xl font-bold text-orange-600' onClick={() => onAdd(quantity)} disabled={!stock}> 
         Agregar al carrito
         </button>    
         

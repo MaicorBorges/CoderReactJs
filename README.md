@@ -1,3 +1,16 @@
+#Proyecto inicial de ecommerce para la artista Micaela Perera
+
+Esta app hace parte de un proyecto mayor donde se muestra la obra y vide de la artista. 
+
+El mismo esta en proceso de ser finalizado, restando varios detalles por terminar. 
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

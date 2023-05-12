@@ -38,7 +38,7 @@ const ItemListContainer = ({ gretting }) => {
 
     return (
         <div>
-            <h1>{gretting}</h1>
+            <h1 className=" pt-10 pb-20 font-bold text-lg text-gray-700 ">{gretting}</h1>
             {loading ? <p>Cargando...</p> : <ItemList products={products} />}
         </div>
     );
